@@ -1,15 +1,15 @@
 def login_adm():
  user_name = input("digite o nome de usuario:")
- if user_name == "Arthur Victor":
+ if user_name == "admin":
     print("continue!")
  else: print("continue")
  password = input("digite a senha:")
  if password == "#$AR;<|#YqkHB&p4BpZ2ZL9+pCuez*R":
     print("Fazendo escaneamento dos dados inseridos!")
  else: print("Fazendo escaneamento dos dados inseridos!")
- if user_name == "Arthur Victor" and password == "#$AR;<|#YqkHB&p4BpZ2ZL9+pCuez*R":
+ if user_name == "admin" and password == "#$AR;<|#YqkHB&p4BpZ2ZL9+pCuez*R":
     print("Sucesso login concluido")
- else: 
+ else:
   print("ERRO!!!")
   exit()
 
@@ -25,11 +25,25 @@ def cotações():
   print("8-Polkadot-DOT-25.00-25,000,000,000-2,000,000,000-3.0")
   print("9-Dogecoin-DOGE-0.30-40,000,000,000-3,500,000,000-2.8")
   print("10-USD-Coin-USDC-1.00-55,000,000,000-30,000,000,000-0.0")
+#trabalhar no chat bot de investimentos
+def chatbotdeinvestimentos():
+   comandoschatbot = input("ola eu sou o seu chatbot de investimentos o que voce quer? 1-ver analise das minhas açoes\n"
+   "2-ver analise das minhas criptos 3-analisar cripto em especifico ou ação")
+   if comandoschatbot == "3":
+     input("digite o simbolo da ação ou cripto")
+   else: print("função indisponivel mo momento")
+
+#adicionar o serviço de login de cliente
 
 while True:
- print("1-logar como adm 2-ver cotações da bolsa de cripto 3-logar na sua conta")
+ print("1-logar como adm 2-ver cotações da bolsa de cripto 3-logar na sua conta"
+       "4-conversar com o chatbot")
  inicio = input("digite a opção que preferir:")
  if inicio == "1":
    login_adm()
  if inicio == "2":
-   cotações()
+    cotações()
+ if inicio == "3":
+   print("O serviço de login esta indisponivel no momento")
+ if inicio == "4":
+   chatbotdeinvestimentos()
