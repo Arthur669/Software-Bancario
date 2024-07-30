@@ -1,3 +1,4 @@
+import os
 def login_adm():
  user_name = input("digite o nome de usuario:")
  if user_name == "admin":
@@ -16,24 +17,40 @@ def login_adm():
 def cotações():
   print("Rank Criptomoeda Símbolo Preço (USD) Capitalização de Mercado(USD) Volume nas 24h(USD) Variação nas 24h(%)")
   print("1-Bitcoin-BTC-30,000.00-600,000,000,000-25,000,000,000-2.5")
+  print("-------------------------------------------------------------------------------------")
   print("2-Ethereum-ETH-2,000.00-240,000,000,000-15,000,000,000-1.8")
+  print("-------------------------------------------------------------------------------------")
   print("3-BinanceCoin-BNB-300.00-50,000,000,000 2,000,000,000	3.2")
+  print("-------------------------------------------------------------------------------------")
   print("4-Tether-USDT-1.00-70,000,000,000-50,000,000,000-0.0")
+  print("-------------------------------------------------------------------------------------")
   print("5-Cardano-ADA-1.20-38,000,000,000-3,000,000,000-2.1")
+  print("-------------------------------------------------------------------------------------")
   print("6-XRP XRP-0.80-35,000,000,000-4,000,000,000-1.7")
+  print("-------------------------------------------------------------------------------------")
   print("7-Solana-SOL-35.00-10,000,000,000-1,500,000,000-4.5")
+  print("-------------------------------------------------------------------------------------")
   print("8-Polkadot-DOT-25.00-25,000,000,000-2,000,000,000-3.0")
+  print("-------------------------------------------------------------------------------------")
   print("9-Dogecoin-DOGE-0.30-40,000,000,000-3,500,000,000-2.8")
+  print("-------------------------------------------------------------------------------------")
   print("10-USD-Coin-USDC-1.00-55,000,000,000-30,000,000,000-0.0")
-#trabalhar no chat bot de investimentos
+  print("-------------------------------------------------------------------------------------")
+
+
 def chatbotdeinvestimentos():
    comandoschatbot = input("ola eu sou o seu chatbot de investimentos o que voce quer? 1-ver analise das minhas açoes\n"
    "2-ver analise das minhas criptos 3-analisar cripto em especifico ou ação")
    if comandoschatbot == "3":
      input("digite o simbolo da ação ou cripto")
+     print("esse ativo é altamente valorizado e seu preço esta estavel")
    else: print("função indisponivel mo momento")
 
-#adicionar o serviço de login de cliente
+def logincliente():
+  name_user = input("digite seu nome de usuario:")
+  email_user = input("digite seu email:")
+  user_password = input("digite sua senha:")
+
 
 while True:
  print("1-logar como adm 2-ver cotações da bolsa de cripto 3-logar na sua conta"
@@ -42,8 +59,9 @@ while True:
  if inicio == "1":
    login_adm()
  if inicio == "2":
-    cotações()
+  cotações()
  if inicio == "3":
-   print("O serviço de login esta indisponivel no momento")
+  logincliente()
+  print("acesso liberado!")
  if inicio == "4":
    chatbotdeinvestimentos()
