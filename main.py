@@ -45,32 +45,47 @@ def chatbotdeinvestimentos():
      print("esse ativo é altamente valorizado e seu preço esta estavel")
    else: print("função indisponivel mo momento")
 
+def cadastros():
+  print("Bem vindo(a) a parte de cadastro!")
+  name = input("Digite seu nome:")
+  password = input("Digite sua senha:")
+  email = input("Digite seu email:")
+
 def logincliente():
-  name_user = input("digite seu nome de usuario:")
-  email_user = input("digite seu email:")
-  user_password = input("digite sua senha:")
-  print("Sucesso")
-  comandos = input("o que você deseja fazer? 1-ver saldo 2-Fazer uma transferencia 3-Ver historico das minhas atividades 4-Ver meu id")
-  if comandos == "1":
-    print("Seu saldo é:R$10.000,00")
-  if comandos == "2":
-    transferencia = input("Quanto você quer transferir e qual é o id da pessoa?")
-    print("Transferencia concluida")
-  if comandos == "3":
-    print("Serviço indisponivel")
-  if comandos == "4":
-    print("43437667876687")
+  while True:
+   name_user = input("digite seu nome de usuario:")
+   email_user = input("digite seu email:")
+   user_password = input("digite sua senha:")
+   print("Sucesso")
+   comandos = input("o que você deseja fazer? 1-ver saldo 2-Fazer uma transferencia 3-Ver historico das minhas atividades 4-Ver meu id")
+   if comandos == "1":
+     print("Seu saldo é:R$10.000,00")
+   if comandos == "2":
+     transferencia = input("Quanto você quer transferir e qual é o id da pessoa?")
+     print("Transferencia concluida")
+   if comandos == "3":
+     print("Serviço indisponivel")
+   if comandos == "4":
+     print("43437667876687")
+
+
+
+ 
+#-----------CODIGO ABAIXO É A PARTE QUE O USUARIO USA E ACIMA AS FUNÇÕES ETC----------------
+
 
 while True:
- print("1-logar como adm 2-ver cotações da bolsa de cripto 3-logar na sua conta"
-       "4-conversar com o chatbot")
- inicio = input("digite a opção que preferir:")
- if inicio == "1":
+  print("1-logar como adm 2-ver cotações da bolsa de cripto 3-logar na sua conta"
+       "4-conversar com o chatbot 5-cadastrar")
+  inicio = input("digite a opção que preferir:")
+  if inicio == "1":
    login_adm()
- if inicio == "2":
-  cotações()
- if inicio == "3":
-  logincliente()
+  if inicio == "2":
+   cotações()
+  if inicio == "3":
+    logincliente()
   print("acesso liberado!")
- if inicio == "4":
+  if inicio == "4":
    chatbotdeinvestimentos()
+  if inicio == "5":
+   cadastros()
