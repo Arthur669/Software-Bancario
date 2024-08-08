@@ -40,10 +40,14 @@ def cotações():
 def chatbotdeinvestimentos():
    comandoschatbot = input("ola eu sou o seu chatbot de investimentos o que voce quer? 1-ver analise das minhas açoes\n"
    "2-ver analise das minhas criptos 3-analisar cripto em especifico ou ação")
+   if comandoschatbot == "1":
+    print("Suas ações estão estaveis")
+   if comandoschatbot == "2":
+    print("Suas criptos estão estaveis")
    if comandoschatbot == "3":
      input("digite o simbolo da ação ou cripto")
      print("esse ativo é altamente valorizado e seu preço esta estavel")
-   else: print("função indisponivel mo momento")
+   
 
 def cadastros():
   print("Bem vindo(a) a parte de cadastro!")
@@ -67,6 +71,7 @@ def logincliente():
      print("Serviço indisponivel")
    if comandos == "4":
      print("43437667876687")
+
 
 
 
